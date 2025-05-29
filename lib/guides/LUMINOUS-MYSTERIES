@@ -1,0 +1,406 @@
+---------------------------------------------------------------------
+
+▖  ▖    ▗     ▘   ▖     ▘        
+▛▖▞▌▌▌▛▘▜▘█▌▛▘▌▀▌ ▌ ▌▌▛▛▌▛▌▛▌▛▘▀▌
+▌▝ ▌▙▌▄▌▐▖▙▖▌ ▌█▌ ▙▖▙▌▌▌▌▌▌▙▌▄▌█▌
+    ▄▌                           
+
+MIT License - https://opensource.org/license/mit
+Copyright (c) 2025 mvghasty
+
+Github: https://github.com/mvghasty
+
+---------------------------------------------------------------------
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣭⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡶⡤⠈⠓⠘⢧⡀⠈⠠⠑⠂⡜⠢⡜⢰⢡⡘⢥⢩
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠑⡄⠹⣆⠀⢁⠣⢌⠱⡌⢆⠣⢜⢢⢣
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⢸⡄⢸⡆⠀⠘⢢⢱⠘⡌⢳⡌⡆⣧
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠳⠦⣄⡀⢿⡄⠐⡌⢦⣙⡱⢦⢱⢚⡴
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡦⠘⡇⠈⣷⡀⡘⢆⡲⢱⡍⣎⠳⣜
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠷⠦⣽⡀⢹⡇⠘⢦⡑⢧⡚⣬⢓⢮
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣄⣸⡆⢸⡇⣈⢧⡛⢦⡝⢦⣋⢮
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⢿⣿⣿⣿⣿⠿⠾⣿⡇⢸⡇⣜⡲⣝⣣⠞⡧⢞⡼
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⣛⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣟⡷⣯⣟⢾⡹⣒⢣⠒⣴⡛⣸⠟⣡⣿⠙⣶⠹⣜⠶⣋⣗⢫⡞
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣍⣳⣢⣽⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⢿⣻⣽⣯⢿⡽⣻⢾⣹⣎⡵⡈⢆⣱⠏⣴⣯⠾⢯⣥⣛⣶⣻⣼⣫⢷⣚⡿⣼
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣯⣟⣧⢻⢝⣻⢿⣯⣷⣛⡮⣱⣿⠞⠁⣸⣿⣰⣛⡾⣶⣻⣞⡷⣯⣟⣳⢏⣟⡷
+⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡽⣳⣛⢾⡙⢮⠿⣷⣦⣽⣿⣿⢿⣤⣤⣾⣿⣞⣷⣿⣻⢷⣯⢿⣽⣳⢭⡟⣾⣹⢾
+⣯⣿⣿⣿⣿⡑⠆⠡⢤⣬⣝⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣽⣿⣿⣿⣿⣿⣿⣿⡳⣭⢋⣎⠹⡄⢫⠜⣛⡿⣿⣿⣿⡿⣽⣾⣿⢾⣿⣿⣟⡿⣟⣿⢾⡽⣧⣻⢧⣟⣾
+⣷⣿⣿⣿⣿⣿⣿⣶⣤⣌⠉⠻⢾⡽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡽⣻⠶⣹⣿⣿⣿⣿⣿⣿⣿⣳⡜⡳⢌⡓⣬⣶⣿⣿⣹⣾⢳⣿⣿⣿⣿⣻⣿⣿⣯⢿⡿⣽⣿⢿⣻⡷⣯⢿⣾⣽
+⣿⣿⣿⣿⣿⣿⣷⣏⡿⣿⣿⡤⣈⢹⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣞⣯⢳⠯⡝⢦⠻⣿⣿⣿⣿⣿⣿⣷⣯⣵⣾⣾⣿⣧⣏⠳⣽⣏⣿⣿⣿⣟⣿⣿⣿⣿⣯⢿⣽⣻⣾⣿⣿⣿⣽⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⢯⣿⡿⣭⢟⣿⣷⣎⠷⣞⣿⣿⣿⣿⣿⣿⣿⣿⣟⠮⡝⣍⠻⣜⣣⣿⢿⣿⣿⣿⣿⣿⣿⣿⡿⣿⡿⢿⣿⣿⣿⣾⣿⣻⣟⡿⣿⣻⣿⣿⣿⣯⢿⣞⡷⣿⣿⡿⣯⢿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⢷⣿⣿⢿⡸⢿⣿⣿⢹⣾⣹⣿⣿⣿⣿⣿⣿⡏⢷⠹⣰⣿⡿⠁⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣁⣿⠀⢹⡷⣏⢿⡿⣿⣏⡿⣿⣿⣹⢿⣾⣹⣷⡿⣿⣹⣿⢿⣿⣿
+⣿⣿⣿⣿⣿⣿⢿⣟⡾⣽⢿⣟⣷⢻⣿⣿⡷⣯⢿⣿⣿⣿⣿⣿⣙⣦⢿⣏⣽⠀⡇⠀⠀⠛⣿⣿⣿⣿⣿⣿⣿⢿⣽⣿⣿⡇⠀⣼⣧⠈⠙⢿⣿⣾⣽⢻⡿⣭⢟⡶⣯⢷⣻⢷⣻⣯⣿⣿⣿
+---------------------------------------------------------------------
+
+
+
+*.1 - [1] SIGNUM CRUCIS
+
+Per signum crucis, de inimicis 
+nostris libera nos Deus noster.
+
+In nomine Patris et Filii 
+et Spiritus Sancti. Amen.
+
+---------------------------------------------------------------------
+
+*.1 - [2] CREDO
+
+Credo in unum Deum,  
+Patrem onipotentem factorem  
+coeli et terrae, visibilium omnium  
+et invisibilium.
+
+Et in unum Dominum, Jesum  Christum, 
+Filium Dei unigenitum,  
+et ex Patre natum ante omnia
+saecula.
+
+Deum de Deo, lumen de lumine,   
+Deum verum de Deo vero,  
+genitum, non factum,  
+consubstantialem Patri,   
+per quem omnia facta sunt.
+
+Qui propter nos homines et propter 
+nostram salutem, descendit de coelis 
+et incarnatus est de Spiritu Sancto ex 
+Maria Virgine et homo factus est.
+
+Crucifixus etiam pro nobis,  
+sub Pontio Pilato, passus et  
+sepultus est.
+Et ressurrexit tertia die secundum  
+scripturas et ascendit in coelum,  
+sedet ad dexteram Patris.
+
+Et iterum venturus est cum gloria  
+judicare vivos et mortuos cujus regni non erit finis.
+
+Et Spiritum Sanctum Dominum  
+et vivificantem qui ex Patre  
+Filioque procedit.
+Qui cum Patre  
+et Filio simul adoratur  
+et conglorificatur, qui locutus est  
+per prophetas.
+
+Et unam, sanctam, catholicam  
+et apostolicam Ecclesiam.
+
+Confiteor unum baptismum  
+in remissionem peccatorum.
+
+Et expecto ressurrectionem  
+mortuorum et vitam venturi saeculi. Amen.
+
+---------------------------------------------------------------------
+
+*.1 - [3] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+---------------------------------------------------------------------
+
+*.3 - [4] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+---------------------------------------------------------------------
+
+*.1 - [5] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+---------------------------------------------------------------------
+
+*.1 - [6] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
++ I + - Primum Mysterium Lucis: Iesus in Iordáne baptizátur
+
+---------------------------------------------------------------------
+
+
+*.1 - [7] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+
+*.10 - [8] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+
+*.1 - [9] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+
+*.1 - [10] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
++ II + - Secundum Mysterium Lucis: Iesus apud Canénse Matrimónium 
+         se autorevélat
+
+---------------------------------------------------------------------
+
+
+*.1 - [11] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+
+*.10 - [12] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+
+*.1 - [13] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+
+*.1 - [14] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
++ III + - Tertium Mysterium Lucis: Iesus regnum Dei proclámat et ad 
+          conversiónem invítat
+
+---------------------------------------------------------------------
+
+
+*.1 - [15] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+
+*.10 - [16] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+
+*.1 - [17] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+
+*.1 - [18] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
++ IV + - Quartum Mysterium Lucis: Iesus in monte transfigurátur
+
+---------------------------------------------------------------------
+
+
+*.1 - [19] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+
+*.10 - [20] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+
+*.1 - [21] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+
+*.1 - [22] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
++ V + - Quintum Mysterium Lucis: Iesus Eucharístiam instítuit
+
+---------------------------------------------------------------------
+
+
+*.1 - [23] PATER NOSTER
+
+Pater Noster, qui es in coelis.
+Sanctificetur nomen tuum.
+Adveniat regnum tuum.
+Fiat voluntas tua, sicut in coelo et in terra.
+Panem nostrum quotidianum da nobis hodie.
+Dimitte nobis debita nostra, sicut et nos 
+dimittimus debitoribus nostris.
+Et ne nos inducas in tentationem, 
+sed libera nos a malo. Amen.
+
+
+*.10 - [24] AVE MARIA
+
+Ave Maria, gratia plena, Dominus tecum.
+Benedicta tu in mulieribus, et benedictus 
+fructus ventris tui, Jesus.
+Sancta Maria, Mater Dei, 
+ora pro nobis peccatoribus, 
+nunc et in hora mortis nostrae. Amen.
+
+
+*.1 - [25] GLORIA
+
+Gloria Patri, et Filio, et Spiritui Sancto. 
+Sicut erat in principio, et nunc et semper, 
+et in saecula saeculorum. Amen.
+
+
+*.1 - [26] ORATIO FATIMAE
+
+O pie Jesus, dimitte nobis debita nostra, 
+libera nos ab igne inferni, 
+perduc in caelum omnes animas, 
+praesertim eas, quae misericordiae 
+tuae maxime indigent.
+
+
+---------------------------------------------------------------------
+
+
+*.1 - [27] SALVE REGINA
+
+Salve, Regina, mater misericoridiae, vita, dulcedo, 
+et spes nostra, salve. Ad te clamamus, exsules filii Evae.
+Ad te suspiramus, gementes et flentes in hac lacrimarum valle.
+Eia, ergo, advocata nostra, illos tuos misericordes ocullos 
+ad nos converte. Et Jesum, benedictum fructum ventris tui, 
+nobis post hoc exilium ostende. 
+O clemens, o pia, o dulcis, Virgo Maria. Amen.
+
+Ora pro nobis, Sancta Dei Genitrix.
+Ut digni efficiamur promissionibus Christi.
+
+
+*.1 - [28] REGINA CAELI
+
+Regina Caeli, laetare, alleluia;
+Quia quem meruisti portare, alleluia;
+Resurrexit, sicut dixit, alleluia;
+Ora pro nobis Deum, alleluia.
+
+Gaude et laetare, Virgo Maria, alleluia.
+Quia surraxit Dominus vere, alleluia.
+
+Deus, qui per resurrectiónem Filii tui Dómini nostri Jesu Christi 
+mundum laetificáre dignátus es: 
+praesta, quaesumus; ut, per eius Genitrícem Vírginem Mariam, 
+perpétuae capiámus gáudia vitae. 
+Per eumdem Christum, Dóminum nostrum. Amém.
+
+
+---------------------------------------------------------------------
